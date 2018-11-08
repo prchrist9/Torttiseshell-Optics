@@ -1,0 +1,104 @@
+/*"Tamming" Box Model With Reset */
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* Universal Styles */
+
+html {
+	font-size: 18px;
+	line-height: 1.4;
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.background {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 30rem;
+	z-index: 1;
+}
+
+/* Nav Bar */
+
+.bar {
+	max-width: 100%; 
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	color: white;
+	background-color: cadetblue;
+	font-size: 1rem;
+	margin-top: 1rem;
+	z-index: 2;
+}
+
+.left {
+	display: inline-block;
+
+}
+
+.left img {
+	display: inline-block;
+	height: 1.5rem;
+	padding-left: 2rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+
+}
+
+.left h3 {
+	display: inline-block;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+.nav {
+	display: inline-block;
+	float: right;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 1rem 1rem;
+}
+
+/* Body */
+
+.bigbox {
+	font-size: 2rem;
+	line-height: 1.2;
+	font-weight: bold;
+	background-color: white;
+	color: black;
+	float: right;
+	border-color: white;
+	border-style: solid;
+	border-width: 1.5rem 5rem;
+	margin-top: 10rem;
+}
+
+
+/* Services */
+
+.products {
+display: inline-flex;
+padding: 3rem 0;
+width: 25.5rem;
+height: 8rem;
+justify-content: space-between;
+	
+}
